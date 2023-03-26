@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125965448-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125965448-1');
+</script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Оформление заказа на доставку пирогов от Пекарни Баловень в Челябинске.">
+    <meta name="keywords" content="Заказать пироги Челябинск, Пироги Челябинск, Доставка пирогов Челябинск, Пекарня Баловень Челябинск, Пироги на заказ с доставкой в Челябинске, Доставка пирогов на дом и в офис в Челябинске, Доставка обедов, Пироги с мясом, Пироги без мяса, Пирог с индейкой, Пирог с клюквой, Пирог с вишней, Пирог с капустой, Пироги с рыбой, Пироги с грибами, Сладкие пироги">
+    <meta name="author" content="Пекарня Баловень">
+    <meta name="title" content="Пироги Челябинск | Пироги на заказ Баловень | Доставка пирогов Челябинск">
+
+    <title>testEmail</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/logo.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0d4f33b148.js" crossorigin="anonymous"></script>
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(50377897, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50377897" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  </head>
+
+  <body>
+      <!-- Header -->
+      <header>
+        <div class="d-flex align-items-center justify-content-around bd-highlight mb-3">
+          <div class="flex-shrink-0">
+            <img src="images/logo.jpg" width="154px" alt="Логотип Пекарни Баловень">
+          </div>
+          <div class="p-2 bd-highlight">
+            <h1>ДОСТАВКА ПИРОГОВ</h1>
+          </div>
+          <div class="p-2 bd-highlight">ЧЕЛЯБИНСК</div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center bd-highlight mb-3">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+              <a class="phone" href="tel:+79514376627">+7 951 437-66-27</a> 
+            </span>
+        </div>
+        <div class="header_text d-flex align-items-center justify-content-around bd-highlight mb-3">
+            Принимаем заказы ежедневно с 9:00 до 18:00 только на последующие дни
+        </div>
+        <div class="d-flex align-items-center justify-content-around bd-highlight mb-3">
+            СКИДКА на самовывоз 10%
+        </div>
+      </header>
+      
+      <!-- Form -->
+    <form id="form" class="row g-3" action="send.php" method="POST">
+        <!-- Имя -->
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Имя</label>
+          <input name="user_name" type="text" class="form-control" id="inputEmail4">
+        </div>
+        <!-- Телефон -->
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Телефон</label>
+          <input name="user_phone" type="phone" class="form-control" id="inputPassword4">
+        </div>
+        <!-- Адрес -->
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Адрес доставки</label>
+          <input name="user_address" type="text" class="form-control" id="inputAddress" placeholder="улица, номер дома, подъезд, этаж, ориентир">
+        </div>
+        <!-- <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div> -->
+        <!-- Город -->
+        <!-- <div class="col-md-6">
+          <label for="inputCity" class="form-label">Город</label>
+          <input name="Город" type="text" class="form-control" id="inputCity" placeholder="Челябинск">
+        </div> -->
+        <!-- Выбор пирога из выпадающего меню, нет возможности твыбрать несколько -->
+        <!-- <div class="col-md-4">
+          <label for="inputState" class="form-label">Пирог</label>
+          <select name="Пирог" id="inputState" class="form-select">
+            <option selected>Выберите пирог...</option>
+            <option>Пирог с вишней ................. 1100р</option>
+            
+          </select>
+        </div> -->
+        <!-- Выбор пирога через чекбоксы -->
+        <div class="col-md-6">
+            <div class="form-check">
+                <input name="cherry_pie" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с вишней
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с клюквой" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с клюквой
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с яблоками" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с яблоками
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с индейкой и картошкой" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с индейкой и картофелем
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с индейкой и капустой" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с индейкой и капустой
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с курицей и грибами в сливках" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с курицей и грибами в сливках
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с курицей и картофелем" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с курицей и картофелем
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с курицей, грибами и картофелем" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с курицей, грибами и картофелем
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с курицей и капустой" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с курицей и капустой
+                </label>
+              </div>
+              
+        </div>
+        <div class="col-md-6">
+            <div class="form-check">
+                <input name="Пирог с рубленым мясом и картофелем" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с рубленым мясом и картофелем
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с рубленым мясом и яйцом" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с рубленым мясом и яйцом
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог со свининой и картофелем" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог со свининой и картофелем
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с капустой и яйцом" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с капустой и яйцом
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с капустой и грибами" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с капустой и грибами
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с картофелем грибами" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с картофелем и грибами
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с горбушей и картофелем" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с горбушей и картофелем
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с горбушей и рисом" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с горбушей и рисом
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с лососеми картофелем" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с лососем и картофелем
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="Пирог с лососем и рисом" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Пирог с лососем и рисом
+                </label>
+              </div>
+        </div>
+        
+        <!-- <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div> -->
+        <!-- <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div> -->
+
+        <!-- Комментарии -->
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Ваши пожелания и комментарии к заказу</label>
+            <textarea name="user_text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+        <!-- Кнопка -->
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Заказать</button>
+        </div>
+      </form>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <!-- <i class="foot fab fa-twitter"></i>
+        <i class="foot fab fa-facebook-f"></i> -->
+        <!-- <i class="foot fab fa-instagram"></i>
+        <i class="foot fas fa-envelope"></i> -->
+        <div class="d-flex align-items-center justify-content-center bd-highlight mb-3">
+          <span>
+            <i class="fas fa-phone-alt"></i>
+            <a class="phone" href="tel:+79514376627">+7 951 437-66-27</a> 
+          </span>
+        </div>
+        <img src="images/logo.svg" width="85px" alt="logo">
+        <p class="copyright">© Copyright 2017 Пекарня Баловень Челябинск</p>
+        
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+   </body>
+</html>
