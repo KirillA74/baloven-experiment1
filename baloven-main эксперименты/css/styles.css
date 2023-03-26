@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+p {
+  color: #413f42;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  cursor: pointer;
+}
+
+.phone {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.header_text {
+  text-align: center;
+}
+
+.btn {
+  background-color: #890f0d;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #890f0d;
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.pricing-column {
+  padding: 1% 1%;
+}
+
+#footer {
+  background-color: #e83a14;
+  text-align: center;
+  padding: 3% 15%;
+}
+
+.foot {
+  margin: 15px 10px;
+}
+
+.copyright {
+  color: black;
+}
+#form {
+  margin-top: 20px;
+  padding: 10px 50px 50px 50px;
+  background-color: bisque;
+}
+
+#order_button {
+  color: #fff;
+}
+
+.form-check {
+  padding-top: 8px;
+}
+
+/* @media (min-width: 320px) {
+    .header_text {
+        display: none;
+    }
+    .header_city {
+        display: none
+    }
+} */
+
+.topbutton {
+  position: fixed;
+  right: 13px;
+  bottom: 15px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 55px; /*ширина кнопки*/
+  height: 55px; /*высота кнопки*/
+  border: 2px solid #ccc;
+  background: #890f0d;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  line-height: 33px; /*центровка иконки в кнопке*/
+  /* -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px; */
+}
+
+.topbutton:hover {
+  background-color: #fff;
+  color: #890f0d;
+}
+
+@media (max-width: 800px) {
+  .topbutton {
+    bottom: 5px; /*отступ кнопки снизу от экрана*/
+    right: 2px; /*отступ кнопки слева от экрана(right - справа)*/
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  right: 13px;
+  bottom: 90px;
+  transform: translate(-50%, -50%);
+  background: #25d366; /*цвет кнопки*/
+  border-radius: 50%;
+  width: 55px; /*ширина кнопки*/
+  height: 55px; /*высота кнопки*/
+  color: #fff;
+  text-align: center;
+  line-height: 53px; /*центровка иконки в кнопке*/
+  font-size: 35px; /*размер иконки*/
+  z-index: 9999;
+}
+.whatsapp-button a {
+  color: #fff;
+}
+.whatsapp-button:before,
+.whatsapp-button:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  border: 50%;
+  border: 1px solid #25d366; /*цвет анимированных волн от кнопки*/
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+  backface-visibility: hidden;
+}
+
+.whatsapp-button:after {
+  animation-delay: 0.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .whatsapp-button {
+    bottom: 5px; /*отступ кнопки снизу от экрана*/
+    left: 50px; /*отступ кнопки слева от экрана(right - справа)*/
+  }
+}
+
+/* иконка корзины и количества товаров в ней */
+.cart {
+  position: fixed;
+  right: 20px;
+  bottom: 890px;
+  /* position: relative; */
+  background-color: #890f0d;
+  color: #fff;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 15%;
+}
+
+@media (max-width: 800px) {
+  .cart {
+    bottom: 480px; /*отступ кнопки снизу от экрана*/
+    right: 15px; /*отступ кнопки слева от экрана(right - справа)*/
+  }
+}
+
+.cartAmount {
+  position: absolute;
+  top: -0.5px;
+  right: -10px;
+  font-size: 16px;
+  background-color: burlywood;
+  color: black;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.bi-dash-lg {
+  color: red;
+}
+
+.bi-plus-lg {
+  color: green;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(3, 436px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 436px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 436px);
+  }
+}
+
+.item {
+  border: 1px solid #b2b2b2;
+  border-radius: 4px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  font-size: 20px;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #890f0d;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: #890f0d;
+}
+.removeAll {
+  background-color: red;
+  margin-left: 30px;
+}
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(2, 436px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  gap: 15px;
+}
+
+@media (max-width: 1000px) {
+  .shopping-cart {
+    grid-template-columns: repeat(1, 436px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shopping-cart {
+    grid-template-columns: repeat(1, 436px);
+  }
+}
+
+.cart-item {
+  border: 2px solid #73777b;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #890f0d;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+  margin-left: 60px;
+}
+
+#exampleFormControlTextarea2 {
+  display: none;
+}
+
+/* #exampleFormControlTextarea3 {
+  display: none;
+} */

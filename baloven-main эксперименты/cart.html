@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0d4f33b148.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="container d-flex justify-content-center">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #890f0d"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/Баловень - копия.png"
+              alt="Пекарня Баловень логотип"
+              width="85"
+              height="70"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Пекарня Баловень</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tel:+79514376627">+7 951 437-66-27</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#sweet">Сладкие</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fish">С рыбой</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#turkey">С индейкой</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chicken">С курицей</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#meat">С мясом</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#vegan">Без мяса</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="delivery.html">Условия доставки</a>
+              </li> -->
+              <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> -->
+              <!-- <span class="navbar-text">
+                 <a href="tel:+79514376627">+7 951 437-66-27</a> 
+                </span> -->
+              <!-- <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li> -->
+            </ul>
+            <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+          </div>
+        </div>
+      </nav>
+      <!-- Иконка корзины с количеством товаров-->
+      <a href="cart.html">
+        <div class="cart">
+          <i class="bi bi-cart2"></i>
+          <div id="cartAmount" class="cartAmount">0</div>
+        </div>
+      </a>
+    </div>
+
+    <!--WhatsApp мигающая кнопка-->
+    <a
+      href="https://wa.me/79514376627?text=Здравствуйте!%20Я%20хочу%20заказать%20пироги"
+      target="_blank"
+      title="Написать в Whatsapp"
+      rel="noopener noreferrer"
+    >
+      <div class="whatsapp-button">
+        <i class="fa fa-whatsapp"></i>
+      </div>
+    </a>
+
+    <!-- Корзина-->
+    <div id="label" class="text-center"></div>
+
+    <div class="shopping-cart" id="shopping-cart"></div>
+
+    <!-- Form -->
+    <div class="container mb-3">
+      <form
+        id="form"
+        class="row g-3"
+        action="https://formspree.io/f/xyyolknj"
+        method="POST"
+      >
+        <!-- Имя -->
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Имя</label>
+          <input
+            name="Имя"
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Елена"
+          />
+        </div>
+        <!-- Телефон -->
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Телефон</label>
+          <input
+            name="Телефон"
+            type="tel"
+            class="form-control"
+            id="inputPassword4"
+            placeholder="+7 951 437 66 27"
+          />
+        </div>
+        <!-- Дата -->
+        <div class="col-md-6">
+          <label for="InputEmail1" class="form-label">Дата доставки</label>
+          <input
+            name="Дата доставки"
+            type="date"
+            class="form-control"
+            id="exampleInputEmail1"
+          />
+        </div>
+        <!-- Время -->
+        <div class="col-md-6">
+          <label for="InputEmail1" class="form-label">Время доставки</label>
+          <input
+            name="Время доставки"
+            type="time"
+            min="09:00"
+            max="20:00"
+            class="form-control"
+            id="exampleInputEmail1"
+          />
+        </div>
+        <!-- Адрес -->
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Адрес доставки</label>
+          <input
+            name="Адрес"
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="улица, номер дома, подъезд, этаж, ориентир"
+          />
+        </div>
+        <!-- <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div> -->
+        <!-- Город -->
+        <!-- <div class="col-md-6">
+        <label for="inputCity" class="form-label">Город</label>
+        <input name="Город" type="text" class="form-control" id="inputCity" placeholder="Челябинск">
+      </div> -->
+
+        <!-- Выбор пирога из выпадающего меню, нет возможности твыбрать несколько -->
+        <!-- <div class="col-md-4">
+        <label for="inputState" class="form-label">Пирог</label>
+        <select name="Пирог" id="inputState" class="form-select">
+          <option selected>Выберите пирог...</option>
+          <option>Пирог с вишней ................. 1100р</option>
+          
+        </select>
+      </div> -->
+
+        <!-- <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div> -->
+        <!-- <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div> -->
+
+        <!-- Состав заказа -->
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label"></label>
+          <textarea
+            name="Заказ"
+            class="form-control"
+            id="exampleFormControlTextarea2"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <!-- Итого -->
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea3" class="form-label"></label>
+          <textarea
+            name="Итого"
+            class="form-control"
+            id="exampleFormControlTextarea3"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <!-- Другой состав заказа не удачная попытка -->
+        <!-- <div class="mb-3">
+          <label for="exampleFormControlTextarea4" class="form-label"></label>
+          <textarea
+            name="Итого"
+            class="form-control"
+            id="exampleFormControlTextarea4"
+            rows="3"
+          ></textarea>
+        </div> -->
+
+        <!-- Комментарии -->
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Ваши пожелания и комментарии к заказу</label
+          >
+          <textarea
+            name="Комментарии"
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <!-- Кнопка -->
+        <div class="container">
+          <button type="submit" class="btn btn-outline-dark btn-lg">
+            Заказать
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Кнопка вверх -->
+
+    <a href="#" title="Вернуться к началу" class="topbutton">Вверх</a>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <!-- <i class="foot fab fa-twitter"></i>
+      <i class="foot fab fa-facebook-f"></i> -->
+      <!-- <i class="foot fab fa-instagram"></i>
+      <i class="foot fas fa-envelope"></i> -->
+      <div
+        class="d-flex align-items-center justify-content-center bd-highlight mb-3"
+      >
+        <span>
+          <i class="fas fa-phone-alt"></i>
+          <a class="phone" href="tel:+79514376627">+7 951 437-66-27</a>
+        </span>
+      </div>
+      <img
+        src="images/Баловень - копия.png"
+        width="85px"
+        alt="Логотип Пекарня «Баловень»"
+        title="Логотип Пекарня «Баловень»"
+      />
+      <p class="copyright">© Copyright 2017 Пекарня «Баловень»</p>
+      <p itemprop="streetAddress" class="copyright">
+        Челябинск, Тимирязева, 41
+      </p>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+  <script src="src/Data.js"></script>
+  <script src="src/cart.js"></script>
+</html>
