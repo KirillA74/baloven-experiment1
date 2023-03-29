@@ -215,23 +215,16 @@ i {
 
 /* иконка корзины и количества товаров в ней */
 .cart {
-  position: fixed;
-  right: 20px;
-  bottom: 890px;
-  /* position: relative; */
+  position: relative;
+  right: -40px;
+  top: 35px;
   background-color: #890f0d;
   color: #fff;
   font-size: 30px;
   padding: 5px;
   border-radius: 15%;
   width: 80px;
-}
-
-@media (max-width: 800px) {
-  .cart {
-    bottom: 750px; /*отступ кнопки снизу от экрана*/
-    right: 15px; /*отступ кнопки слева от экрана(right - справа)*/
-  }
+  z-index: 9999;
 }
 
 .cart:hover {
@@ -241,15 +234,17 @@ i {
 
 .cartAmount {
   position: absolute;
-  top: -0.4px;
-  right: 70px;
+  left: -10px;
+  top: -15px;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
   min-width: 22px;
   background-color: #fbb900;
   color: #890f0d;
   padding: 6px;
   border-radius: 50%;
+  z-index: 9999;
 }
 
 .bi-dash-lg {
