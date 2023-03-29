@@ -8,29 +8,32 @@ let generateShop = () => {
       let { id, name, price, desc, img } = x;
       let search = basket.find((x) => x.id === id) || [];
       return `
-    <div id=product-id-${id} class="item card h-100">
-           <img width: "220" src=${img} alt="">
-           <div class="details">
-              <div class="card-header">
-              <h3>${name}</h3>
-              </div>
-              <div class="card-body">
-              <p>${desc}</p>
-              <p>вес 1,5кг</p>
-              </div>
-              <div class="price-quantity">
-                <h2>${price}р</h2>
-                <div class="buttons">
-                  <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
-                  <div id=${id} class="quantity">
-                    ${search.item === undefined ? 0 : search.item}
-                  </div>
-                  <i onclick="increment(${id})" class="bi bi-plus-lg"></i> 
-              </div>
-              
-            </div>
-            </div> 
-    </div>
+    <div class="container mb-3 mt-3">
+      <div id=product-id-${id} class="item card h-100">
+        <img width: "220" src=${img} alt="">
+        <div class="details">
+        <div class="card-header">
+        <h3>${name}</h3>
+        </div>
+        <div class="card-body">
+        <p>${desc}</p>
+        <p>вес 1,5кг</p>
+        </div>
+        <div class="price-quantity">
+         <h2>${price}р</h2>
+         <div class="buttons">
+           <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
+           <div id=${id} class="quantity">
+             ${search.item === undefined ? 0 : search.item}
+           </div>
+           <i onclick="increment(${id})" class="bi bi-plus-lg"></i> 
+       </div>
+       
+     </div>
+     </div> 
+  </div>
+    </div>  
+    
     `;
     })
     .join(""));
