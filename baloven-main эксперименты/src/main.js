@@ -13,6 +13,7 @@ let generateShop = () => {
            <div class="details">
               <h3>${name}</h3>
               <p>${desc}</p>
+              <p>вес 1,5кг</p>
               <div class="price-quantity">
                 <h2>${price}р</h2>
                 <div class="buttons">
@@ -20,8 +21,9 @@ let generateShop = () => {
                   <div id=${id} class="quantity">
                     ${search.item === undefined ? 0 : search.item}
                   </div>
-                  <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
+                  <i onclick="increment(${id})" class="bi bi-plus-lg"></i> 
               </div>
+              
             </div>
             </div> 
     </div>
@@ -29,6 +31,12 @@ let generateShop = () => {
     })
     .join(""));
 };
+
+{
+  /* <button class="btn btn-outline-dark btn-lg" type="button">
+                  <a id="order_button" class="nav-link">В корзину</a>
+                  </button> */
+}
 
 generateShop();
 
@@ -49,6 +57,7 @@ let increment = (id) => {
   update(selectedItem.id);
   localStorage.setItem("data", JSON.stringify(basket));
 };
+
 let decrement = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);

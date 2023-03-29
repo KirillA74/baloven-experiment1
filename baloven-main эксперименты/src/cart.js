@@ -28,7 +28,8 @@ let generateCartItems = () => {
               </h4>
               <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
           </div>
-          <div class="buttons">
+          <img class="imgCart" width="180" src=${img} alt="" />
+          <div class="buttonsCart">
               <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
               <div id=${id} class="quantity">${item}</div>
               <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
@@ -37,7 +38,6 @@ let generateCartItems = () => {
         </div>
       </div>
       `;
-        // <img width="180" src=${img} alt="" />
       })
       .join(""));
   } else {
