@@ -255,11 +255,23 @@ i {
 .bi-dash-lg {
   color: #fff;
   padding: 10px;
+  border: 0.5px solid #fff;
+}
+
+.bi-dash-lg:hover {
+  background-color: #fbb900;
+  color: #890f0d;
 }
 
 .bi-plus-lg {
   color: #fff;
   padding: 10px;
+  border: 0.5px solid #fff;
+}
+
+.bi-plus-lg:hover {
+  background-color: #fbb900;
+  color: #890f0d;
 }
 
 .quantity {
@@ -324,7 +336,7 @@ i {
   flex-direction: row;
   gap: 18px;
   font-size: 14px;
-  max-width: 140px;
+  max-width: 136px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 135px;
@@ -374,6 +386,11 @@ i {
   margin-bottom: 30px;
   margin-left: 10px;
   font-size: 20px;
+}
+
+.bi-x-lg:hover {
+  background-color: red;
+  color: #fff;
 }
 
 .shopping-cart {
