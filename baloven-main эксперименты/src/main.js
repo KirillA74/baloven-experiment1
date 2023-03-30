@@ -8,7 +8,7 @@ let generateShop = () => {
       let { id, name, price, desc, img } = x;
       let search = basket.find((x) => x.id === id) || [];
       return `
-    <div class="container mb-3 mt-3">
+    <div class="container">
       <div id=product-id-${id} class="item card h-100">
         <img width: "220" src=${img} alt="">
         <div class="details">
